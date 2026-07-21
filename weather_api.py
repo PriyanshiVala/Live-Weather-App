@@ -41,7 +41,6 @@ if st.button("Get Weather"):
             "Humidity": data["main"]["humidity"]
         }
 
-        # Smaller graph
         fig, ax = plt.subplots(figsize=(5, 3))
 
         ax.bar(weather.keys(), weather.values())
