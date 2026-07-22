@@ -40,7 +40,6 @@ if st.button("Get Weather"):
             "Max Temp": data["main"]["temp_max"],
             "Humidity": data["main"]["humidity"]
         }
-
         fig, ax = plt.subplots(figsize=(5, 3))
 
         ax.bar(weather.keys(), weather.values())
